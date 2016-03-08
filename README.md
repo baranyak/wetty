@@ -14,10 +14,6 @@ hterm source - https://chromium.googlesource.com/apps/libapps/+/master/hterm/
 Install
 -------
 
-*  `git clone https://github.com/krishnasrinivas/wetty`
-
-*  `cd wetty`
-
 *  `npm install`
 
 Run on HTTP:
