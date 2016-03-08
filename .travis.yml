@@ -9,6 +9,5 @@ before_install:
  - sh -e /etc/init.d/xvfb start
 
 script:
- - "node app.js -p 3000"
  - "./host_info.sh"
 
