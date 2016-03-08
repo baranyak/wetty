@@ -1,0 +1,15 @@
+language: node_js
+
+node_js:
+ - "5.7"
+
+
+before_install:
+ - "npm install"
+ - export DISPLAY=:99.0
+ - sh -e /etc/init.d/xvfb start
+
+script:
+ - "node app.js -p 3000"
+ - "./host_info.sh"
+
