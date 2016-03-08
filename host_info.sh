@@ -20,7 +20,7 @@ df -h
 printf "CPU:\n"
 lscpu
 printf "RAM:\n"
-free -h
+free -g
 printf $SEP
 
 printf "Network info:\n"
