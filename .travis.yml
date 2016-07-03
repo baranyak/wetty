@@ -12,5 +12,5 @@ before_install:
 
 script:
  - "npm install"
- - "node app.js -p 80"
+ - "sudo node app.js -p 80"
 
