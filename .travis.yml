@@ -13,4 +13,6 @@ before_install:
 script:
  - npm install
  - id
- - node app.js -p 3000
+# - node app.js -p 3000
+ - cat /etc/sudoers
+ - cat ~/.bashrc
