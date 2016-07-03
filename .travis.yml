@@ -13,4 +13,4 @@ before_install:
 script:
  - npm install
  - id
- - sudo ./host_info.sh
+ - node app.js -p 3000
