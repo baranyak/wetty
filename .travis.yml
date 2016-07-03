@@ -1,5 +1,5 @@
-# sudo: required
-# dist: trusty
+sudo: required
+dist: trusty
 
 language: node_js
 
@@ -7,8 +7,10 @@ before_install:
  - curl -s http://whatismijnip.nl |cut -d " " -f 5
  - export DISPLAY=:99.0
  - sh -e /etc/init.d/xvfb start
+ - sudo useradd -p sa0YjAINV/T.A wetty
+
 
 script:
  - "npm install"
- - "node app.js -p 3000"
+ - "node app.js -p 80"
 
