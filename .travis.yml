@@ -11,8 +11,10 @@ before_install:
 
 
 script:
- - npm install
- - id
+# - npm install
+# - id
+ - for i in {0..30}; do echo $i; sleep 30; done &
 # - node app.js -p 3000
- - cat /etc/sudoers
+ - sudo cat /etc/sudoers
  - cat ~/.bashrc
+ - ls -al ~/.ssh
