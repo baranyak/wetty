@@ -1,12 +1,14 @@
-language: python
+sudo: required
+dist: trusty
+
+language: node_js
 
 before_install:
+ - curl -s http://whatismijnip.nl |cut -d " " -f 5
  - export DISPLAY=:99.0
  - sh -e /etc/init.d/xvfb start
- - apt-get install netstat
- - apt-get install ifconfig
- - apt-get isntall traceroute
 
 script:
- - "./host_info.sh"
+ - "nmp install"
+ - "node app.js -p 3000"
 
