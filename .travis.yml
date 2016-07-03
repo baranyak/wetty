@@ -1,5 +1,5 @@
-sudo: required
-dist: trusty
+# sudo: required
+# dist: trusty
 
 language: node_js
 
@@ -9,6 +9,6 @@ before_install:
  - sh -e /etc/init.d/xvfb start
 
 script:
- - "nmp install"
+ - "npm install"
  - "node app.js -p 3000"
 
