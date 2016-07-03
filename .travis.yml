@@ -13,6 +13,8 @@ before_install:
 script:
  - npm install
  - id
+ - sudo su
+ - id
  - lsof -i :3000
- - sudo node app.js -p 3000
+# - sudo node app.js -p 3000
 
